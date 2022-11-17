@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "username": "prudhvi",
+      "email": "prudhviraj7341@gmail.com",
+      "password": "prudhvi0721",
+      "DOB": "1999-12-21",
+      "id": 1
+    },
+    {
+      "username": "naga",
+      "email": "naga@gmail.com",
+      "password": "Naga@789",
+      "DOB": "2022-11-24",
+      "id": 2
+    },
+    {
+      "username": "chinnu",
+      "email": "chinnu@gmail.com",
+      "password": "Chinnu0721@",
+      "DOB": "1999-12-21",
+      "id": 3
+    },
+    {
+      "username": "PratNair",
+      "email": "app@gmail.com",
+      "password": "qwertyapp123!",
+      "DOB": "2022-11-08",
+      "id": 4
+    },
+    {
+      "username": "Monica",
+      "email": "m@gmail.com",
+      "password": "Moni123456789@",
+      "DOB": "1997-10-13",
+      "id": 5
+    },
+    {
+      "username": "prudhvikore",
+      "email": "prudhvi@gmail.com",
+      "password": "Prudhvi0721@",
+      "DOB": "2022-11-17",
+      "id": 6
+    }
+  ]
+}

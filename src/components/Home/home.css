@@ -1,0 +1,131 @@
+.home_heading {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 16px;
+  color: black;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.details {
+  width: 80%;
+  text-align: justify;
+  color:#64748b;
+}
+
+.logout_button {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 14px;
+  color: #ffffff;
+  height: 40px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 2px;
+  background-color: #0b69ff;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  width: 90%;
+  max-width: 1110px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 96px;
+  }
+}
+
+.main {
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-right: 50px;
+}
+
+@media screen and (max-width:768px) {
+  .main {
+    align-items: center;
+    padding-right: 0;
+    margin-bottom: 50px;
+  }
+}
+
+.intro-video-mobile {
+  display: none;
+}
+
+@media screen and (max-width:768px) {
+  .intro-video-mobile {
+    display: block;
+  }
+}
+
+.intro-video {
+  display: none;
+}
+
+@media screen and (min-width:768px) {
+  .intro-video {
+    display: block;
+  }
+}
+
+
+.video {
+  border: none;
+  border-radius: 15px;
+  width: 300px;
+  height: 200px;
+}
+  
+
+@media screen and (min-width: 768px) {
+  .video {
+    border: none;
+    border-radius: 15px;
+    width: 550px;
+    height: 400px;
+  }
+}
+
+.anchor {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.knowmore {
+  width: 35% !important;
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 14px;
+  color: #ffffff;
+  height: 40px;
+  margin-top: 20px;
+  margin-bottom: 2px;
+  background-image:linear-gradient(#f15b2a,#ec008c);
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+
+

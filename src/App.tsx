@@ -1,26 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Route, Routes} from "react-router-dom"
 
-function App() {
+import './App.css';
+import Home from './components/Home/home';
+import Register from "./components/Register/register"
+import LoginForm  from './components/LoginForm/login';
+import ForgotPassword from "./components/ForgotPassword/ForgotPassword"
+import NotFound from "./components/Notfound/notfound";
+import { LoginState } from './Context api/State';
+import { useContext } from 'react';
+
+const App=():any=> {
+
+  const user:any=useContext(LoginState)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  <Routes>
+    <Route  path="/" element={user.user?<Home/>:<LoginForm/>} />
+    <Route  path="/login" element={<LoginForm/>}/>
+    <Route path="/register" element={<Register/>}/>
+    <Route path="/forgot" element={<ForgotPassword/>}/>
+    <Route path="*" element={<NotFound/>}/>
+  </Routes>
+  )
+  
 }
 
 export default App;
